@@ -10,7 +10,7 @@ export class OKXFuturesWebsocket extends SharedWebsocket {
       this.ws?.send?.(
         JSON.stringify({
           op: 'subscribe',
-          args: [{ channel: 'trades', instId: 'BTC-USDT-SWAP' }],
+          args: [{ channel: 'tickers', instId: 'BTC-USDT-SWAP' }],
         })
       );
     }

@@ -94,13 +94,13 @@ const LatencyTable = () => {
     },
     {
       name: 'OKX Spot',
-      stream: 'trades.BTC-USDT',
+      stream: 'tickers.BTC-USDT',
       latency: okxSpot.latency,
       link: 'https://www.okx.com/join/SAFECEX',
     },
     {
       name: 'OKX Futures',
-      stream: 'trades.BTC-USDT-SWAP',
+      stream: 'tickers.BTC-USDT-SWAP',
       latency: okxFutures.latency,
       link: 'https://www.okx.com/join/SAFECEX',
     },
@@ -125,7 +125,7 @@ const LatencyTable = () => {
                 </a>
               </td>
               <td class="text-left font-mono text-xs">{exchange.stream}</td>
-              <td class="text-right font-mono">{exchange.latency()}ms</td>
+              <td class="text-right font-mono">{exchange.latency() || 0}ms</td>
             </tr>
           )}
         </For>
