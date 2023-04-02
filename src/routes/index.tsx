@@ -12,9 +12,9 @@ const Home = () => {
             <img alt="tuleep.trade" src="https://tuleep.trade/tulip.png" />
           </div>
           <div>
-            Sponsored by tuleep.trade, your gateway to success in the fast-paced
-            world of cryptocurrency news trading, with innovative tools and
-            features to help you stay ahead of the curve.
+            Sponsored by <strong>tuleep.trade</strong>, your gateway to success
+            in the fast-paced world of cryptocurrency news trading, with
+            innovative tools and features to help you stay ahead of the curve.
           </div>
         </div>
       </a>
