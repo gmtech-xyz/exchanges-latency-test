@@ -120,7 +120,12 @@ const LatencyTable = () => {
           {(exchange) => (
             <tr>
               <td class="text-left">
-                <a href={exchange.link} class="border-b border-dotted">
+                <a
+                  href={exchange.link}
+                  class="border-b border-dotted"
+                  target="_blank"
+                  rel="noreferrer"
+                >
                   {exchange.name}
                 </a>
               </td>
