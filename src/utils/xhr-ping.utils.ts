@@ -9,7 +9,7 @@ export const pingURL = (url: string): Promise<number> => {
   return new Promise((resolve) => {
     const start = performance.now();
     request(url, () => {
-      const delay = performance.now() - start;
+      const delay = Math.round(performance.now() - start);
       resolve(delay);
     });
   });
