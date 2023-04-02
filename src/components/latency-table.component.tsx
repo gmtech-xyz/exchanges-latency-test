@@ -107,11 +107,11 @@ const LatencyTable = () => {
   ];
 
   return (
-    <table class="table table-auto w-[700px] mx-auto">
+    <table class="table table-auto w-full max-w-[700px] mx-auto">
       <thead>
         <tr>
           <th class="text-left uppercase">Exchange</th>
-          <th class="text-left uppercase">Stream</th>
+          <th class="text-left uppercase hidden md:table-cell">Stream</th>
           <th class="text-right uppercase">Latency</th>
         </tr>
       </thead>
@@ -129,7 +129,9 @@ const LatencyTable = () => {
                   {exchange.name}
                 </a>
               </td>
-              <td class="text-left font-mono text-xs">{exchange.stream}</td>
+              <td class="text-left font-mono text-xs hidden  md:table-cell">
+                {exchange.stream}
+              </td>
               <td class="text-right font-mono">{exchange.latency() || 0}ms</td>
             </tr>
           )}

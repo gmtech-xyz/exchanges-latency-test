@@ -38,7 +38,7 @@ const Home = () => {
       <LatencyTable />
       <div class="h-12" />
       <PingTable />
-      <div class="mt-20 max-w-[600px] mx-auto mb-20 pl-12 text-center">
+      <div class="mt-20 max-w-[600px] mx-auto mb-20 text-sm md:text-base md:pl-12 text-center">
         <ul>
           <li class="mb-2">
             <a
@@ -47,7 +47,7 @@ const Home = () => {
               target="_blank"
               rel="noreferrer"
             >
-              Register on Bybit and get up to $30,000 bonus on deposit
+              Use Bybit and get up to $30,000 bonus on deposit
             </a>
           </li>
           <li class="mb-2">
@@ -57,7 +57,7 @@ const Home = () => {
               target="_blank"
               rel="noreferrer"
             >
-              Register on OKX and get up to $10,000 bonus on deposit
+              Use OKX and get up to $10,000 bonus on deposit
             </a>
           </li>
           <li class="mb-2">
@@ -67,7 +67,7 @@ const Home = () => {
               target="_blank"
               rel="noreferrer"
             >
-              Register on Binance and get $100 bonus on deposit
+              Use Binance and get $100 bonus on deposit
             </a>
           </li>
         </ul>

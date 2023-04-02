@@ -64,14 +64,14 @@ const PingTable = () => {
   });
 
   return (
-    <table class="table table-auto w-[700px] mx-auto">
+    <table class="table table-auto w-full max-w-[700px] mx-auto">
       <thead>
         <tr>
           <th class="text-left uppercase">Exchange</th>
           <th class="text-right uppercase">Ping (AVG/MIN/MAX)</th>
         </tr>
       </thead>
-      <tbody>
+      <tbody class="text-sm md:text-base">
         <For each={exchanges}>
           {(exchange) => (
             <tr>
@@ -85,7 +85,7 @@ const PingTable = () => {
                   {exchange.name}
                 </a>
               </td>
-              <td class="text-right font-mono text-sm">
+              <td class="text-right font-mono text-xs md:text-sm">
                 {avg(exchange.pings)}ms / {min(exchange.pings)}ms /{' '}
                 {max(exchange.pings)}ms
               </td>
