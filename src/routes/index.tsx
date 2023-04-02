@@ -1,4 +1,5 @@
 import LatencyTable from '~/components/latency-table.component';
+import PingTable from '~/components/ping-table.component';
 import TimeSyncCheck from '~/components/time-sync-check.component';
 
 const Home = () => {
@@ -35,6 +36,8 @@ const Home = () => {
       </div>
       <TimeSyncCheck />
       <LatencyTable />
+      <div class="h-12" />
+      <PingTable />
       <div class="mt-20 max-w-[600px] mx-auto mb-20 pl-12 text-center">
         <ul>
           <li class="mb-2">

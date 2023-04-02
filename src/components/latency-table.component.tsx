@@ -51,12 +51,6 @@ const LatencyTable = () => {
 
   const exchanges = [
     {
-      name: 'Bybit Spot v5',
-      stream: 'tickers.BTCUSDT',
-      latency: bybitSpot.latency,
-      link: 'https://partner.bybit.com/b/safecex',
-    },
-    {
       name: 'Bybit Futures v5',
       stream: 'tickers.BTCUSDT',
       latency: bybitFutures.latency,
@@ -66,6 +60,12 @@ const LatencyTable = () => {
       name: 'Bybit Futures v3',
       stream: 'tickers.BTCUSDT',
       latency: bybitFuturesv3.latency,
+      link: 'https://partner.bybit.com/b/safecex',
+    },
+    {
+      name: 'Bybit Spot v5',
+      stream: 'tickers.BTCUSDT',
+      latency: bybitSpot.latency,
       link: 'https://partner.bybit.com/b/safecex',
     },
     {

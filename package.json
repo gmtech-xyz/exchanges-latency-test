@@ -37,6 +37,7 @@
   "dependencies": {
     "@solidjs/meta": "^0.28.2",
     "@solidjs/router": "^0.8.2",
+    "p-iteration": "^1.1.8",
     "solid-js": "^1.6.16",
     "solid-start": "^0.2.24",
     "undici": "^5.15.1"

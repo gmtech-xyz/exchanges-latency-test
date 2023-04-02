@@ -28,7 +28,7 @@ const fetchAndSetDiff = async () => {
 const TimeSyncCheck = () => {
   onMount(() => {
     fetchAndSetDiff();
-    interval = setInterval(fetchAndSetDiff, 1000);
+    interval = setInterval(fetchAndSetDiff, 10_000);
   });
 
   onCleanup(() => {
