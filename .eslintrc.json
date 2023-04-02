@@ -1,0 +1,18 @@
+{
+  "extends": ["algolia", "algolia/react", "algolia/typescript"],
+  "settings": {
+    "import/parsers": {
+      "@typescript-eslint/parser": [".js", ".ts", ".tsx"]
+    },
+    "import/resolver": {
+      "typescript": {
+        "alwaysTryTypes": true
+      }
+    }
+  },
+  "rules": {
+    "@typescript-eslint/explicit-function-return-type": "off",
+    "react/react-in-jsx-scope": "off",
+    "react/no-unknown-property": ["error", { "ignore": ["class"] }]
+  }
+}

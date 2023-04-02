@@ -1,0 +1,47 @@
+{
+  "name": "exchanges-latency-test",
+  "scripts": {
+    "dev": "solid-start dev",
+    "build": "solid-start build",
+    "start": "solid-start start",
+    "lint-ts": "tsc --noEmit",
+    "lint-js": "eslint --ext .js,.ts,.tsx src",
+    "lint": "npm run lint-ts && npm run lint-js"
+  },
+  "type": "module",
+  "devDependencies": {
+    "@babel/eslint-parser": "^7.21.3",
+    "@types/debug": "^4.1.7",
+    "@types/react": "^18.0.32",
+    "@typescript-eslint/eslint-plugin": "^5.57.0",
+    "@typescript-eslint/parser": "^5.57.0",
+    "autoprefixer": "^10.4.13",
+    "eslint": "^8.37.0",
+    "eslint-config-algolia": "^20.1.0",
+    "eslint-config-prettier": "^8.8.0",
+    "eslint-import-resolver-typescript": "^3.5.4",
+    "eslint-plugin-eslint-comments": "^3.2.0",
+    "eslint-plugin-import": "^2.27.5",
+    "eslint-plugin-jsdoc": "^40.1.1",
+    "eslint-plugin-jsx-a11y": "^6.7.1",
+    "eslint-plugin-prettier": "^4.2.1",
+    "eslint-plugin-react": "^7.32.2",
+    "eslint-plugin-react-hooks": "^4.6.0",
+    "postcss": "^8.4.21",
+    "prettier": "^2.8.7",
+    "solid-start-node": "^0.2.19",
+    "tailwindcss": "^3.2.4",
+    "typescript": "^5.0.3",
+    "vite": "^4.1.4"
+  },
+  "dependencies": {
+    "@solidjs/meta": "^0.28.2",
+    "@solidjs/router": "^0.8.2",
+    "solid-js": "^1.6.16",
+    "solid-start": "^0.2.24",
+    "undici": "^5.15.1"
+  },
+  "engines": {
+    "node": ">=16"
+  }
+}
