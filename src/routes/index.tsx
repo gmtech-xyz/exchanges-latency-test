@@ -47,7 +47,7 @@ const Home = () => {
               target="_blank"
               rel="noreferrer"
             >
-              Use Bybit and get up to $30,000 bonus on deposit
+              Use Bybit, up to $30,000 bonus on deposit
             </a>
           </li>
           <li class="mb-2">
@@ -57,17 +57,27 @@ const Home = () => {
               target="_blank"
               rel="noreferrer"
             >
-              Use OKX and get up to $10,000 bonus on deposit
+              Use OKX, up to $10,000 bonus on deposit
             </a>
           </li>
           <li class="mb-2">
+            <a
+              href="https://x.woo.org/en/trade?ref=safecex"
+              class="border-b border-dotted border-black"
+              target="_blank"
+              rel="noreferrer"
+            >
+              Use Woo X, deposit $100 and 0 fees for 14 days
+            </a>
+          </li>
+          <li>
             <a
               href="https://accounts.binance.com/en/register?ref=KOLLSXK0"
               class="border-b border-dotted border-black"
               target="_blank"
               rel="noreferrer"
             >
-              Use Binance and get $100 bonus on deposit
+              Use Binance, get $100 bonus on deposit
             </a>
           </li>
         </ul>

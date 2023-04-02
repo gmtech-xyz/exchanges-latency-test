@@ -9,6 +9,8 @@ import { BybitSpotv3Websocket } from '~/exchanges/bybit-spot-v3.ws';
 import { BybitSpotWebsocket } from '~/exchanges/bybit-spot.ws';
 import { OKXFuturesWebsocket } from '~/exchanges/okx-futures.ws';
 import { OKXSpotWebsocket } from '~/exchanges/okx-spot.ws';
+import { WooXFuturesWebsocket } from '~/exchanges/woo-x-futures.ws';
+import { WooXSpotWebsocket } from '~/exchanges/woo-x-spot.ws';
 
 const bybitSpot = new BybitSpotWebsocket();
 const bybitFutures = new BybitFuturesWebsocket();
@@ -24,6 +26,9 @@ const binanceFutures = new BinanceFuturesWebsocket();
 const okxSpot = new OKXSpotWebsocket();
 const okxFutures = new OKXFuturesWebsocket();
 
+const wooxSpot = new WooXSpotWebsocket();
+const wooxFutures = new WooXFuturesWebsocket();
+
 const LatencyTable = () => {
   onMount(() => {
     bybitSpot.connect();
@@ -35,6 +40,8 @@ const LatencyTable = () => {
     binanceFutures.connect();
     okxSpot.connect();
     okxFutures.connect();
+    wooxSpot.connect();
+    wooxFutures.connect();
   });
 
   onCleanup(() => {
@@ -47,6 +54,8 @@ const LatencyTable = () => {
     binanceFutures.close();
     okxSpot.close();
     okxFutures.close();
+    wooxSpot.close();
+    wooxFutures.close();
   });
 
   const exchanges = [
@@ -103,6 +112,18 @@ const LatencyTable = () => {
       stream: 'tickers.BTC-USDT-SWAP',
       latency: okxFutures.latency,
       link: 'https://www.okx.com/join/SAFECEX',
+    },
+    {
+      name: 'Woo X Spot',
+      stream: 'SPOT_BTC_USDT@ticker',
+      latency: wooxSpot.latency,
+      link: 'https://x.woo.org/en/trade?ref=safecex',
+    },
+    {
+      name: 'Woo X Futures',
+      stream: 'PERP_BTC_USDT@ticker',
+      latency: wooxFutures.latency,
+      link: 'https://x.woo.org/en/trade?ref=safecex',
     },
   ];
 

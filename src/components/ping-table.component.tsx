@@ -37,6 +37,12 @@ const [exchanges, setExchanges] = createStore([
     url: 'https://fapi.binance.com/fapi/v1/time',
     link: 'https://accounts.binance.com/en/register?ref=KOLLSXK0',
   },
+  {
+    name: 'Woo X',
+    pings: [] as number[],
+    url: 'https://api.woo.org/v1/public/info/spot_btc_usdt',
+    link: 'https://x.woo.org/en/trade?ref=safecex',
+  },
 ]);
 
 let timeoutId: NodeJS.Timeout;
