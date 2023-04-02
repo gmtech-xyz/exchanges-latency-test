@@ -50,7 +50,7 @@ const ping = async () => {
   await forEachSeries(exchanges, async (exchange, idx) => {
     try {
       const latency = await pingURL(exchange.url);
-      setExchanges(idx, 'pings', [...exchange.pings, latency]);
+      setExchanges(idx, 'pings', exchange.pings.length, latency);
       await sleep(500);
     } catch {
       // do nothing
@@ -107,6 +107,21 @@ const PingTable = () => {
               rel="noopener noreferrer"
             >
               OKX
+            </a>
+          </td>
+          <td class="text-right font-mono text-orange-500 text-xs">
+            Not supported (CORS)
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <a
+              href="https://www.kucoin.com/ucenter/signup?rcode=rMSUDAG"
+              class="border-b border-dotted"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              KuCoin
             </a>
           </td>
           <td class="text-right font-mono text-orange-500 text-xs">

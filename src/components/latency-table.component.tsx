@@ -90,18 +90,6 @@ const LatencyTable = () => {
       link: 'https://partner.bybit.com/b/safecex',
     },
     {
-      name: 'Binance Spot',
-      stream: 'BTCUSDT@trade',
-      latency: binanceSpot.latency,
-      link: 'https://accounts.binance.com/en/register?ref=KOLLSXK0',
-    },
-    {
-      name: 'Binance USD-M Futures',
-      stream: 'BTCUSDT@trade',
-      latency: binanceFutures.latency,
-      link: 'https://accounts.binance.com/en/register?ref=KOLLSXK0',
-    },
-    {
       name: 'OKX Spot',
       stream: 'tickers.BTC-USDT',
       latency: okxSpot.latency,
@@ -112,6 +100,18 @@ const LatencyTable = () => {
       stream: 'tickers.BTC-USDT-SWAP',
       latency: okxFutures.latency,
       link: 'https://www.okx.com/join/SAFECEX',
+    },
+    {
+      name: 'Binance Spot',
+      stream: 'BTCUSDT@trade',
+      latency: binanceSpot.latency,
+      link: 'https://accounts.binance.com/en/register?ref=KOLLSXK0',
+    },
+    {
+      name: 'Binance USD-M Futures',
+      stream: 'BTCUSDT@trade',
+      latency: binanceFutures.latency,
+      link: 'https://accounts.binance.com/en/register?ref=KOLLSXK0',
     },
     {
       name: 'Woo X Spot',
@@ -157,6 +157,22 @@ const LatencyTable = () => {
             </tr>
           )}
         </For>
+        <tr>
+          <td>
+            <a
+              href="https://www.kucoin.com/ucenter/signup?rcode=rMSUDAG"
+              class="border-b border-dotted"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              KuCoin
+            </a>
+          </td>
+          <td />
+          <td class="text-right font-mono text-orange-500 text-xs">
+            Not supported (CORS)
+          </td>
+        </tr>
       </tbody>
     </table>
   );
