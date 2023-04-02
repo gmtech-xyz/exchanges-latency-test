@@ -1,4 +1,5 @@
 import LatencyTable from '~/components/latency-table.component';
+import TimeSyncCheck from '~/components/time-sync-check.component';
 
 const Home = () => {
   return (
@@ -32,6 +33,7 @@ const Home = () => {
         location, ensuring you never miss a beat in the fast-paced world of
         trading.
       </div>
+      <TimeSyncCheck />
       <LatencyTable />
       <div class="mt-20 max-w-[600px] mx-auto mb-20 pl-12 text-center">
         <ul>
